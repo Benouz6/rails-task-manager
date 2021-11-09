@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
-  def tasks
-    @tasks.all
+  # GET tasks to: 'tasks#index'
+  def index
+    @tasks = Task.all
   end
 end
