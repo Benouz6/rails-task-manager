@@ -4,7 +4,10 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
 
+  # GET '/tasks/:id', to: 'tasks#show'
   def show
-
+    @task = Task.find(params[:id])
   end
+
+
 end
